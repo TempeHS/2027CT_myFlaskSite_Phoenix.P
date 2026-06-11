@@ -14,12 +14,13 @@
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
+          referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+    </div>
+  </div>
+</div>
         <!-- Info Column -->
         <div class="col-lg-12 mb-4">
-          <!-- Contact form will go here in next lesson -->
 
           <!-- Contact Info -->
           <div class="row">
@@ -56,12 +57,71 @@
                     </span>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+      <!-- Form Column -->
+    <div class="col-lg-12 mb-4">
+      <div class="contact-form">
+        <h4 class="mb-4">Send us a Message</h4>
+        
+        <form action="#" method="POST">
+
+        <!-- Success Alert (initially hidden) -->
+  <div class="alert alert-success d-none" id="successAlert">
+    <strong>Thank you!</strong> Your message has been sent. We'll be in touch soon.
   </div>
-</div>
+
+          <!-- Name Field -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name *</label>
+            <input type="text" class="form-control" id="name" name="name" 
+                  placeholder="Tung Sahur" required>
+          </div>
+          
+          <!-- Email Field -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" class="form-control" id="email" name="email" 
+                  placeholder="Tung.Sahur@example.com" required>
+          </div>
+          
+          <!-- Subject Field -->
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <select class="form-select" id="subject" name="subject">
+              <option value="" selected>Choose a topic...</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Support</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <!-- Message Field -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message *</label>
+            <textarea class="form-control" id="message" name="message" 
+                      rows="5" placeholder="Other feedback/message?" required></textarea>
+          </div>
+          
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+        </form>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  const form = document.querySelector('.contact-form form');
+  const alert = document.getElementById('successAlert');
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();  // Stop actual submission
+    
+    // Show success message
+    alert.classList.remove('d-none');
+    alert.scrollIntoView({ behavior: 'smooth' });
+    
+    // Reset form
+    form.reset();
+  });
+</script>
 {% endblock %}
