@@ -18,6 +18,16 @@ def learn_more():
     return render_template("learn_more.html")
 
 
+@app.route("/new-skills")
+def new_skills():
+    return render_template("new_skills.html")
+
+
+@app.route("/match-live")
+def watch_live():
+    return render_template("watch_live.html")
+
+
 @app.route("/search")
 def search():
     query = request.args.get("q", "").strip()

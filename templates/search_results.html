@@ -1,6 +1,21 @@
-{% extends 'base.html' %} {% block title %}Learn More{% endblock %} {% block
+{% extends 'base.html' %} {% block title %}Search Results{% endblock %} {% block
 content %}
 <div class="container py-5">
-  <h1 class="mb-4">Search bar on its way!</h1>
-  {% endblock %}
+  <h1 class="mb-4">Search Results</h1>
+
+  {% if query %}
+  <p>Showing results for: <strong>{{ query }}</strong></p>
+
+  {% if results %}
+  <ul class="list-group">
+    {% for item in results %}
+    <li class="list-group-item">{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No results found.</p>
+  {% endif %} {% else %}
+  <p>Type something in the search bar.</p>
+  {% endif %}
 </div>
+{% endblock %}

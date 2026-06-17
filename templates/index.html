@@ -43,116 +43,124 @@ block content %}
           >Learn More</a
         >
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <img
-        src="{{ url_for('static', filename='images/hero2.jpg') }}"
-        class="d-block w-100"
-        alt="Features"
-      />
-      <div class="carousel-caption d-none d-md-block">
-        <h2>Amazing highlights</h2>
-        <p>Features the world cup</p>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img
+          src="{{ url_for('static', filename='images/hero2.jpg') }}"
+          class="d-block w-100"
+          alt="Features"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Amazing highlights</h2>
+          <p>Features the world cup</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img
+          src="{{ url_for('static', filename='images/hero3.jpg') }}"
+          class="d-block w-100"
+          alt="Contact"
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Get in Touch</h2>
+          <p>We'd love to hear from you.</p>
+        </div>
       </div>
     </div>
 
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <img
-        src="{{ url_for('static', filename='images/hero3.jpg') }}"
-        class="d-block w-100"
-        alt="Contact"
-      />
-      <div class="carousel-caption d-none d-md-block">
-        <h2>Get in Touch</h2>
-        <p>We'd love to hear from you.</p>
-      </div>
-    </div>
+    <!-- Controls (arrows) -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <!-- Controls (arrows) -->
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#heroCarousel"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#heroCarousel"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  <!-- Feature Cards Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Features</h2>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="bi bi-lightning-charge display-1 text-primary mb-3"></i>
+              <h5 class="card-title">Watch matches anywhere</h5>
+              <p class="card-text">
+                Our platform is optimized for speed and reliability, ensuring a
+                seamless experience.
+              </p>
+              <a
+                href="{{ url_for('watch_live') }}#learn"
+                class="btn btn-primary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="{{ url_for('static', filename='images/feature2.jpg') }}"
+              class="card-img-top"
+              alt="Feature 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Easy to learn</h5>
+              <p class="card-text">
+                Simple and intuitive interface designed with users in mind.
+              </p>
+              <a
+                href="{{ url_for('new_skills') }}#learn"
+                class="btn btn-primary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="{{ url_for('static', filename='images/feature3.jpg') }}"
+              class="card-img-top"
+              alt="Feature 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Insane news</h5>
+              <p class="card-text">
+                Our dedicated team is here to help you anytime you need
+                assistance.
+              </p>
+              <a href="{{ url_for('learn_more') }}#news" class="btn btn-primary"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
 </div>
-
-<!-- Feature Cards Section -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Our Features</h2>
-
-    <div class="row">
-      <!-- Card 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <i class="bi bi-lightning-charge display-1 text-primary mb-3"></i>
-            <h5 class="card-title">Watch matches anywhere</h5>
-            <p class="card-text">
-              Our platform is optimized for speed and reliability, ensuring a
-              seamless experience.
-            </p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img
-            src="{{ url_for('static', filename='images/feature2.jpg') }}"
-            class="card-img-top"
-            alt="Feature 2"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Easy to learn</h5>
-            <p class="card-text">
-              Simple and intuitive interface designed with users in mind.
-            </p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img
-            src="{{ url_for('static', filename='images/feature3.jpg') }}"
-            class="card-img-top"
-            alt="Feature 3"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Insane news</h5>
-            <p class="card-text">
-              Our dedicated team is here to help you anytime you need
-              assistance.
-            </p>
-            <a href="{{ url_for('learn_more') }}#news" class="btn btn-primary"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endblock %}
