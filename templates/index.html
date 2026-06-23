@@ -29,47 +29,35 @@ block content %}
 
   <!-- Slides -->
   <div class="carousel-inner">
-    <!-- Slide 1 -->
+<!-- Slide 1 -->
     <div class="carousel-item active">
-      <img
-        src="{{ url_for('static', filename='images/hero1.jpg') }}"
-        class="d-block w-100"
-        alt="Welcome"
-      />
+      <img src="{{ url_for('static', filename='images/hero1.jpg') }}" class="d-block w-100" alt="Welcome" />
       <div class="carousel-caption d-none d-md-block">
         <h2>Welcome to Scores Squad</h2>
         <p>Discover what new skills you can learn!</p>
-        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg"
-          >Learn More</a
-        >
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <img
-          src="{{ url_for('static', filename='images/hero2.jpg') }}"
-          class="d-block w-100"
-          alt="Features"
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Amazing highlights</h2>
-          <p>Features the world cup</p>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <img
-          src="{{ url_for('static', filename='images/hero3.jpg') }}"
-          class="d-block w-100"
-          alt="Contact"
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <h2>Get in Touch</h2>
-          <p>We'd love to hear from you.</p>
-        </div>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Learn More</a>
       </div>
     </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='images/hero2.jpg') }}" class="d-block w-100" alt="Features" />
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Amazing highlights</h2>
+        <p>Features the world cup</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='images/hero3.jpg') }}" class="d-block w-100" alt="Contact" />
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you.</p>
+      </div>
+    </div>
+
+  </div>
 
     <!-- Controls (arrows) -->
     <button
@@ -96,7 +84,6 @@ block content %}
   <section class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Our Features</h2>
-
       <div class="row">
         <!-- Card 1 -->
         <div class="col-md-4 mb-4">
@@ -105,8 +92,7 @@ block content %}
               <i class="bi bi-lightning-charge display-1 text-primary mb-3"></i>
               <h5 class="card-title">Watch matches anywhere</h5>
               <p class="card-text">
-                Our platform is optimized for speed and reliability, ensuring a
-                seamless experience.
+                Our platform is optimized for speed and reliability.
               </p>
               <a
                 href="{{ url_for('watch_live') }}#learn"
@@ -150,8 +136,7 @@ block content %}
             <div class="card-body">
               <h5 class="card-title">Insane news</h5>
               <p class="card-text">
-                Our dedicated team is here to help you anytime you need
-                assistance.
+                Our dedicated team is here to help you anytime.
               </p>
               <a href="{{ url_for('learn_more') }}#news" class="btn btn-primary"
                 >Learn More</a
@@ -162,5 +147,6 @@ block content %}
       </div>
     </div>
   </section>
+
   {% endblock %}
 </div>
