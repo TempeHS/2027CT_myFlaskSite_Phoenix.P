@@ -18,6 +18,11 @@ def about():
     return render_template("about.html")
 
 
+@app.route("/world")
+def world():
+    return render_template("partials/world.html")
+
+
 @app.route("/learn-more")
 def learn_more():
     return render_template("learn_more.html")
