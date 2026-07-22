@@ -1,71 +1,59 @@
 {% extends 'base.html' %} {% block title %}World Cup - My Flask Site{% endblock
 %} {% block content %}
 
+<style>
+  /* Hover Zoom Effect */
+  .img-hover-zoom {
+    transition: transform 0.3s ease;
+  }
+  .img-hover-zoom:hover {
+    transform: scale(1.05);
+  }
+</style>
+
 <h1 class="text-center mb-5">World Cup tables and stats</h1>
 
 <div class="container">
   <div class="row">
-    <!-- LEFT SIDE: IMAGE -->
-    <div class="col-md-6">
+    <!-- LEFT SIDE: WINNERS IMAGE -->
+    <div class="col-md-6 mb-4">
       <img
         src="{{ url_for('static', filename='images/winners.jpg') }}"
-        class="img-fluid rounded"
+        class="img-fluid rounded img-hover-zoom"
         alt="World Cup Trophy"
         style="height: auto; object-fit: contain"
       />
+
+      <!-- BUTTON BELOW LEFT IMAGE -->
+      <a
+        href="https://www.google.com/search?q=fifa+world+cup+standings"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary mt-3 w-100"
+      >
+        View FIFA World Cup Standings
+      </a>
     </div>
 
-    <!-- RIGHT SIDE: VIDEOS -->
-    <div class="col-md-6">
-      <h2 class="mt-0">World Cup Match Highlights</h2>
+    <!-- RIGHT SIDE: STATS IMAGE -->
+    <div class="col-md-6 mb-4">
+      <img
+        src="{{ url_for('static', filename='images/stats.jpg') }}"
+        class="img-fluid rounded img-hover-zoom"
+        alt="World Cup Stats"
+        style="height: auto; object-fit: contain"
+      />
 
-
-        <!-- Argentina vs France -->
-        <div class="mb-3">
-          <a href="https://www.youtube.com/watch?v=2LJdD9q6XoY" target="_blank">
-            <img
-              src="{{ url_for('static', filename='images/arg_fr.jpg') }}"
-              class="img-fluid rounded"
-              alt="Argentina vs France"
-            />
-          </a>
-        </div>
-
-        <!-- England vs France -->
-        <div class="mb-3">
-          <a href="https://www.youtube.com/watch?v=8qJz0sYtVbA" target="_blank">
-            <img
-              src="{{ url_for('static', filename='images/eng_fr.jpg') }}"
-              class="img-fluid rounded"
-              alt="England vs France"
-            />
-          </a>
-        </div>
-
-        <!-- Spain vs Germany -->
-        <div class="mb-3">
-          <a href="https://www.youtube.com/watch?v=5m0n6Yp8GxE" target="_blank">
-            <img
-              src="{{ url_for('static', filename='images/spa_ger.jpg') }}"
-              class="img-fluid rounded"
-              alt="Spain vs Germany"
-            />
-          </a>
-        </div>
-      </div>
+      <!-- BUTTON BELOW RIGHT IMAGE -->
+      <a
+        href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/statistics/team-statistics"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-success mt-3 w-100"
+      >
+        View Team Statistics
+      </a>
     </div>
-  </div>
-
-  <!-- BUTTON BELOW -->
-  <div class="mt-4">
-    <a
-      href="https://www.google.com/search?q=fifa+world+cup+standings"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn btn-primary"
-    >
-      View FIFA World Cup Standings
-    </a>
   </div>
 </div>
 

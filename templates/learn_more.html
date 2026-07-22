@@ -1,55 +1,103 @@
 {% extends 'base.html' %} {% block title %}Learn More{% endblock %} {% block
 content %}
+
 <div class="container py-5">
   <h1 class="mb-4">Top recent news</h1>
 
+  <!-- SECTION 1 -->
   <section id="matches" class="mb-5">
-    <h3>Spains victory to success</h3>
+    <h3>Spain's victory to success</h3>
 
-    <div class="col-md-6">
-      <img
-        src="{{ url_for('static', filename='images/spainnews.jpg') }}"
-        class="img-fluid rounded"
-        alt="Spainnews"
-        style="height: auto; object-fit: contain"
-      />
-    </div
-  >
-  </div> 
-    <!-- RIGHT SIDE: information -->
-    <div class="col-md-6">
-      <h2 class="mt-0">Spains recipe for success</h2>
-    <p> Spain’s men have underscored their status as the 21st century’s standout national team by adding two FIFA World Cup™ stars to their crest. The classes of 2010 and 2026 may differ somewhat, not least because football itself has changed, but there is an unmistakeable thread linking the two – a shared understanding of the game.
-The success of the Spanish model has not been confined to the men’s game. The women’s side also clinched the coveted crown in 2023 and belong in the same conversation. Alexia Putellas explained in a recent interview with FIFA that she sees lots of similarities between the men’s and women’s teams, which, after all, are part of the same ecosystem from the youth ranks through to the senior set-up.
-David Gutierrez, Director of the National School of Coaches at the Spanish Football Association (RFEF), traces the imperious Iberians’ success back to one particular individual and year: Luis Aragones in 2008. Jose Francisco Molina, who served as the RFEF’s sporting director for men’s football from 2018 until the end of 2022, shares the same view.</p>
+    <div class="row align-items-center">
+      <!-- LEFT: IMAGE -->
+      <div class="col-md-6">
+        <img
+          src="{{ url_for('static', filename='images/spainnews.jpg') }}"
+          class="img-fluid rounded"
+          alt="Spain News"
+        />
+      </div>
 
+      <!-- RIGHT: TEXT -->
+      <div class="col-md-6">
+        <h2 class="mt-0">Spain's recipe for success</h2>
+        <p>
+          Spain’s men have underscored their status as the 21st century’s
+          standout national team by adding two FIFA World Cup™ stars to their
+          crest. The classes of 2010 and 2026 may differ somewhat, not least
+          because football itself has changed, but there is an unmistakeable
+          thread linking the two – a shared understanding of the game.
+        </p>
+        <p>
+          The success of the Spanish model has not been confined to the men’s
+          game. The women’s side also clinched the coveted crown in 2023 and
+          belong in the same conversation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
   <section id="matches" class="mb-5">
     <h3>Rudi Garcia steps down</h3>
 
-    <div class="col-md-6">
-      <img
-        src="{{ url_for('static', filename='images/coach.jpg') }}"
-        class="img-fluid rounded"
-        alt="coach"
-        style="height: auto; object-fit: contain"
-      />
-    </div
-  >
-<p> Rudi Garcia's time with the Red Devils is coming to an end after he guided Belgium to the quarter-finals of the FIFA World Cup 2026™, where they were defeated by eventual champions Spain.
-In a statement released today, the Royal Belgian Football Association (RBFA) announced the end of its partnership with the French head coach, whose contract expires on 31 July.
-"After discussions with the Belgian Federation, we decided not to extend the excellent run of the past 18 months," Garcia said in the statement. "I leave Belgium in League A of the Nations League and among the world's top eight teams. I would like to thank my fantastic group of players, sporting director Vincent Mannaert, and the fans who supported us throughout the World Cup. I wish Belgium all the best as they continue the generational transition I enjoyed initiating."</p>
+    <div class="row align-items-center">
+      <!-- LEFT: IMAGE -->
+      <div class="col-md-6">
+        <img
+          src="{{ url_for('static', filename='images/coach.jpg') }}"
+          class="img-fluid rounded"
+          alt="Coach"
+        />
+      </div>
 
+      <!-- RIGHT: TEXT -->
+      <div class="col-md-6">
+        <h2 class="mt-0">Garcia leaves Belgium</h2>
+        <p>
+          Rudi Garcia's time with the Red Devils is coming to an end after
+          guiding Belgium to the quarter-finals of the FIFA World Cup 2026™,
+          where they were defeated by eventual champions Spain.
+        </p>
+        <p>
+          The Belgian Football Association confirmed today that Garcia’s
+          contract will not be extended. Garcia thanked his players, staff, and
+          fans for their support throughout the campaign.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
   <section id="matches" class="mb-5">
     <h3>Final standings</h3>
 
-    <div class="col-md-6">
-      <img
-        src="{{ url_for('static', filename='images/newsworldcup.jpg') }}"
-        class="img-fluid rounded"
-        alt="coach"
-        style="height: auto; object-fit: contain"
-      />
-    </div
-  >
-  <p> La Roja are on top of the world for the second time in their history following a dominant tournament in which they conceded only one goal en route to victory over Argentina in the final. Luis de la Fuente's men were held to a shock 0-0 draw by Cabo Verde in their opening Group H encounter, but they never looked back from that point on. Successive victories over Saudi Arabia, Uruguay, Austria, Portugal, Belgium and France saw them through to the decider, where they had 20 attempts on goal to their opponents' two over 120 minutes.</p>
+    <div class="row align-items-center">
+      <!-- LEFT: IMAGE -->
+      <div class="col-md-6">
+        <img
+          src="{{ url_for('static', filename='images/newsworldcup.jpg') }}"
+          class="img-fluid rounded"
+          alt="World Cup"
+        />
+      </div>
+
+      <!-- RIGHT: TEXT -->
+      <div class="col-md-6">
+        <h2 class="mt-0">Spain crowned champions</h2>
+        <p>
+          La Roja are on top of the world for the second time in their history
+          following a dominant tournament in which they conceded only one goal
+          en route to victory over Argentina in the final.
+        </p>
+        <p>
+          After a slow start, Spain surged through the knockout rounds with
+          commanding wins over Uruguay, Austria, Portugal, Belgium, and France
+          before lifting the trophy.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
 {% endblock %}

@@ -1,21 +1,54 @@
 {% extends 'base.html' %} {% block title %}Learn More{% endblock %} {% block
 content %}
+
 <div class="container py-5">
-  <h1 class="mb-2">World Cup most recent matches!!!</h1>
+  <h1 class="mb-2">World Cup Most Recent Matches!!!</h1>
 </div>
 
 <div class="container py-5">
-<div class="row mt-4"></div>
-  <div class="col-md-6 mb-2">
-    <h1>Agrentina v Spain</h3>
-    <div class="ratio ratio-16x9">
-      <iframe
-        src="https://www.fifa.com/en/watch/6N4dkwqyP1sUURyCXExX5s"
-        title="Match 1"
-        allowfullscreen
+  <div class="row">
+    <!-- LEFT SIDE: LIVE MATCH CENTRE IMAGE + LINK -->
+    <div class="col-md-6 mb-4">
+      <h2>Spain vs Argentina</h2>
+
+      <!-- IMAGE -->
+      <img
+        src="{{ url_for('static', filename='images/livematch.jpg') }}"
+        class="img-fluid rounded mb-3"
+        alt="Live Match"
+      />
+
+      <!-- LINK UNDER IMAGE -->
+      <a
+        href="https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543"
+        target="_blank"
+        class="btn btn-primary"
       >
-      </iframe>
+        View Full Match Details
+      </a>
+    </div>
+
+    <!-- RIGHT SIDE: MATCH IMAGE + LINK -->
+    <div class="col-md-6 mb-4">
+      <h2>Watch and see the matches of the world cup</h2>
+
+      <!-- IMAGE -->
+      <img
+        src="{{ url_for('static', filename='images/match.jpg') }}"
+        class="img-fluid rounded mb-3"
+        alt="Match Image"
+      />
+
+      <!-- LINK UNDER IMAGE -->
+      <a
+        href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures?country=AU&wtw-filter=ALL"
+        target="_blank"
+        class="btn btn-success"
+      >
+        View All pass 2026 world cup matches
+      </a>
     </div>
   </div>
 </div>
+
 {% endblock %}
