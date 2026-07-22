@@ -3,19 +3,18 @@ content %}
 <div class="container py-5">
   <h1 class="mb-4">Learn new skills?</h1>
 
-  <section id="matches" class="mb-5">
-    <h3>Enjoy learning new skills</h3>
-    <p>Follow the videos to become better.</p>
-  </section>
-
-  <section id="easy" class="mb-5">
-    <h3>Easy to learn</h3>
-    <p>More details about onboarding, tutorials, and beginner features.</p>
-  </section>
-
-  <section id="news" class="mb-5">
-    <h3>insane skills to learn</h3>
-    <p>Try these skills out.</p>
-  </section>
+  <div class="container">
+    <div class="row">
+      <!-- LEFT SIDE: IMAGE -->
+      <div class="col-md-6">
+        <img
+          src="{{ url_for('static', filename='images/newskills.jpg') }}"
+          class="img-fluid rounded"
+          alt="New Skills"
+          style="height: auto; object-fit: contain"
+        />
+      </div>
+      {% endblock %}
+    </div>
+  </div>
 </div>
-{% endblock %}

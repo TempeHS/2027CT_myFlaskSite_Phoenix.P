@@ -9,7 +9,9 @@ content %}
   {% if results %}
   <ul class="list-group">
     {% for item in results %}
-    <li class="list-group-item">{{ item }}</li>
+    <li class="list-group-item">
+      <a href="{{ item.url }}">{{ item.name }}</a>
+    </li>
     {% endfor %}
   </ul>
   {% else %}

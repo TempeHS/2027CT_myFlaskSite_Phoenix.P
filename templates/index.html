@@ -101,8 +101,12 @@ block content %}
       <!-- Card 1 -->
       <div class="col-md-4 mb-4">
         <div class="card h-100">
+          <img
+            src="{{ url_for('static', filename='images/live.jpg') }}"
+            class="card-img-top"
+            alt="Feature 1"
+          />
           <div class="card-body">
-            <i class="bi bi-lightning-charge display-1 text-primary mb-3"></i>
             <h5 class="card-title">Watch matches anywhere</h5>
             <p class="card-text">
               Our platform is optimized for speed and reliability.
@@ -138,7 +142,7 @@ block content %}
       <div class="col-md-4 mb-4">
         <div class="card h-100">
           <img
-            src="{{ url_for('static', filename='images/feature3.jpg') }}"
+            src="{{ url_for('static', filename='images/news.jpg') }}"
             class="card-img-top"
             alt="Feature 3"
           />
@@ -181,6 +185,9 @@ block content %}
       <h3>Round of 32 highlights</h3>
       <p>Germany losing to Paraguay in the shoot outs (3)1:1(4)</p>
       <p>Brazil won to Japan FT(2:)</p>
+
+      <h4>Finals</h4>
+      <p>Spain vs Argentina 1:0</p>
       <a href="{{ url_for('learn_more') }}#news" class="btn btn-primary"
         >Learn more</a
       >

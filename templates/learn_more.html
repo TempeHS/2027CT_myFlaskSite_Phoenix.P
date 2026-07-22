@@ -4,18 +4,52 @@ content %}
   <h1 class="mb-4">Top recent news</h1>
 
   <section id="matches" class="mb-5">
-    <h3>Shocking results</h3>
-    <p>Germany loss to Paragauy in pentaly shootout!!!</p>
-  </section>
+    <h3>Spains victory to success</h3>
 
-  <section id="easy" class="mb-5">
-    <h3>Round of 32 Brazil is heading towards the next round</h3>
-    <p>Watch the amazing match with Brzail vs Japan</p>
-  </section>
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/spainnews.jpg') }}"
+        class="img-fluid rounded"
+        alt="Spainnews"
+        style="height: auto; object-fit: contain"
+      />
+    </div
+  >
+  </div> 
+    <!-- RIGHT SIDE: information -->
+    <div class="col-md-6">
+      <h2 class="mt-0">Spains recipe for success</h2>
+    <p> Spain’s men have underscored their status as the 21st century’s standout national team by adding two FIFA World Cup™ stars to their crest. The classes of 2010 and 2026 may differ somewhat, not least because football itself has changed, but there is an unmistakeable thread linking the two – a shared understanding of the game.
+The success of the Spanish model has not been confined to the men’s game. The women’s side also clinched the coveted crown in 2023 and belong in the same conversation. Alexia Putellas explained in a recent interview with FIFA that she sees lots of similarities between the men’s and women’s teams, which, after all, are part of the same ecosystem from the youth ranks through to the senior set-up.
+David Gutierrez, Director of the National School of Coaches at the Spanish Football Association (RFEF), traces the imperious Iberians’ success back to one particular individual and year: Luis Aragones in 2008. Jose Francisco Molina, who served as the RFEF’s sporting director for men’s football from 2018 until the end of 2022, shares the same view.</p>
 
-  <section id="news" class="mb-5">
-    <h3>Insane news</h3>
-    <p>More details about players and latest headlines.</p>
-  </section>
-</div>
+  <section id="matches" class="mb-5">
+    <h3>Rudi Garcia steps down</h3>
+
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/coach.jpg') }}"
+        class="img-fluid rounded"
+        alt="coach"
+        style="height: auto; object-fit: contain"
+      />
+    </div
+  >
+<p> Rudi Garcia's time with the Red Devils is coming to an end after he guided Belgium to the quarter-finals of the FIFA World Cup 2026™, where they were defeated by eventual champions Spain.
+In a statement released today, the Royal Belgian Football Association (RBFA) announced the end of its partnership with the French head coach, whose contract expires on 31 July.
+"After discussions with the Belgian Federation, we decided not to extend the excellent run of the past 18 months," Garcia said in the statement. "I leave Belgium in League A of the Nations League and among the world's top eight teams. I would like to thank my fantastic group of players, sporting director Vincent Mannaert, and the fans who supported us throughout the World Cup. I wish Belgium all the best as they continue the generational transition I enjoyed initiating."</p>
+
+  <section id="matches" class="mb-5">
+    <h3>Final standings</h3>
+
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/newsworldcup.jpg') }}"
+        class="img-fluid rounded"
+        alt="coach"
+        style="height: auto; object-fit: contain"
+      />
+    </div
+  >
+  <p> La Roja are on top of the world for the second time in their history following a dominant tournament in which they conceded only one goal en route to victory over Argentina in the final. Luis de la Fuente's men were held to a shock 0-0 draw by Cabo Verde in their opening Group H encounter, but they never looked back from that point on. Successive victories over Saudi Arabia, Uruguay, Austria, Portugal, Belgium and France saw them through to the decider, where they had 20 attempts on goal to their opponents' two over 120 minutes.</p>
 {% endblock %}

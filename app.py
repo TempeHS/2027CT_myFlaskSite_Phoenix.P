@@ -40,15 +40,23 @@ def watch_live():
 
 @app.route("/search")
 def search():
-    query = request.args.get("q", "").strip()
+    query = request.args.get("q", "").strip().lower()
 
-    # Replace this with your real data source (DB, API, etc.)
-    sample_items = ["World Cup", "Match Highlights", "Team News", "Contact"]
-    results = (
-        [item for item in sample_items if query.lower() in item.lower()]
-        if query
-        else []
-    )
+    pages = [
+        {"name": "Watch Live", "url": "/watch_live"},
+        {"name": "New Skills", "url": "/new_skills"},
+        {"name": "Contact", "url": "/contact"},
+        {"name": "About", "url": "/about"},
+        {"name": "World", "url": "/world"},
+    ]
+
+    results = []
+
+    if query:
+        for page in pages:
+            if query in page["name"].lower():
+                results.append(page)
+
     return render_template("search_results.html", query=query, results=results)
 
 
