@@ -103,8 +103,8 @@ Score Squad connects to our students to help, engage and watch the latest news a
 | ------------- | ---------------- | ------- | ---------------------- |
 | Bootstrap     | Bootstrap team   | MIT     | Layout and components  |
 | Flask         | Pallets Projects | BSD     | Web server and routing |
-|               |                  |         |                        |
-|               |                  |         |                        |
+| images        | magnific         | EULA    | Images and placeholder |
+
 
 ---
 
