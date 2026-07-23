@@ -1,13 +1,13 @@
 # Website Name
 
-| Field                          | Detail |
-| ------------------------------ | ------ |
-| **Website Title**              |        |
-| **Student Name(s)**            |        |
-| **Class / Course**             |        |
-| **Repository**                 |        |
-| **Live Site / Codespaces URL** |        |
-| **Date**                       |        |
+| Field                          | Detail       |
+| ------------------------------ | -------------|
+| **Website Title**              | Score Squad  |
+| **Student Name(s)**            | Phoenix Pham |
+| **Class / Course**             |              |
+| **Repository**                 |              |
+| **Live Site / Codespaces URL** |              |
+| **Date**                       |              |
 
 > Your website is the main piece of work. This README is short on purpose — it
 > points a reader to your **2-minute walkthrough** and gives an honest
