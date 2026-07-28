@@ -29,12 +29,12 @@
 
 This is the most important part of your documentation — it shows your website running.
 
-https://github.com/TempeHS/2027CT_Arduino_Bootcamp_Phoenix.P/issues/1
+
 
 | Field            | Detail |
 | ---------------- | ------ |
-| **Link / Embed** |        |
-| **Duration**     |        |
+| **Link / Embed** |  https://github.com/TempeHS/2027CT_Arduino_Bootcamp_Phoenix.P/issues/1      |
+| **Duration**     |   2 minutes     |
 
 **Your walkthrough should show:**
 
