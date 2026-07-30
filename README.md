@@ -36,21 +36,8 @@ This is the most important part of your documentation — it shows your website 
 | **Link / Embed** |  https://github.com/TempeHS/2027CT_Arduino_Bootcamp_Phoenix.P/issues/1      |
 | **Duration**     |   2 minutes     |
 
-**Your walkthrough should show:**
 
-- A tour of each page (Home and Contact)
-- Your key Bootstrap components working (navbar, carousel, cards, map, form)
-- The layout responding when the window is resized (navbar collapsing to a hamburger)
-
----
-
-## 3. Evaluation — Did You Deliver Your Statement of Intent?
-
-This is the most important written part of your documentation. Evaluate the
-website you **delivered** against the **Statement of Intent** you wrote during
-planning. Be honest and use evidence — point to a page, a feature or a test.
-
-### 3.1 Your Statement of Intent
+Statement of Intent
 
 Scores squad is a website for the Tempe High School soccer club. This is a website that will provide all the soccer fans in the school information about the latest matches on the main page. You can also search up past matches and rewatch the legends play for your entertainment; our page also has another section which ensures the user to learn new soccer tricks or tips or drills from video guides to build up your skill. The tricks and drills are in sections from beginner, know a bit about soccer or pro as this can keep track of your level to make sure you can perform the drill or trick.
 
@@ -71,35 +58,29 @@ Score Squad connects to our students to help, engage and watch the latest news a
 
 ### 3.3 Evaluation Against Your Intent (2–3 paragraphs)
 
-> Take each aim in your Statement of Intent and evaluate **how well the
-> delivered site meets it**. Where did you meet your intent? Where did you fall
-> short, and why? Support every judgement with evidence from your site.
+Your Statement of Intent aimed to create a website that keeps Tempe High School soccer fans informed, active, and engaged. The delivered site meets this goal most clearly through its homepage, which presents match information and acts as a central point for users to explore soccer related content. The navigation bar supports your intent by making it easy for teens and kids to move between sections without confusion, aligning with your aim of providing “good navigation controls.” This shows a strong follow through on your plan to make the site accessible and simple for younger users.
 
-<!-- Write 2–3 paragraphs. -->
+Another major aim was to offer soccer drills, tricks, and past matches so students could learn new skills and stay active. While your Statement of Intent describes a rich set of features including beginner, intermediate, and pro level drills the delivered site only partially meets this. The structure is there, and the homepage hints at match content, but the full library of drills, videos, and past matches is not yet implemented. This means the site currently supports the idea of learning and engagement but does not fully deliver the practical tools you intended.
+
+You also emphasized safety, no accounts, no ads, and no misleading information. The delivered site succeeds strongly here: it is simple, clean, and free of distractions. There are no sign ups, no pop‑ups, and no external pressure on the user. This matches your intent well and supports your target audience of students aged 5–18. However, because some planned features are missing, the site does not yet achieve the full level of engagement and activity you described.
+
 
 ### 3.4 Overall Effectiveness (1–2 paragraphs)
 
-> Step back from the detail. Overall, **how effective** is the website at
-> achieving its purpose for its target audience? Weigh what works against what
-> falls short, and state what you would improve to better meet your intent.
+Overall, the website is effective as a starting point for a school soccer hub. It provides a clear homepage, simple navigation, and a safe, distraction free environment all of which support your target audience. The site successfully communicates its purpose and feels approachable for teens and kids who want quick access to soccer content.
 
-<!-- Write 1–2 paragraphs. -->
+However, the effectiveness is limited by the absence of several key features described in your intent, such as the full drill library, past match replays, and skill level sections. Adding these would significantly improve the site’s usefulness and better achieve your goal of helping students stay active, learn new skills, and enjoy soccer during their free time. With these additions, Score Squad would more fully deliver on its promise to engage and support the Tempe High School soccer community.
 
----
 
 ## 4. Acknowledgements
 
-> List anything you did not make yourself — tutorials, images, fonts, icons and
-> libraries. Using content without acknowledgement may constitute academic
-> misconduct.
-
-| What you used | Source / Creator | Licence | What you used it for   |
+| What you used | Source / Creator | License | What you used it for   |
 | ------------- | ---------------- | ------- | ---------------------- |
-| Bootstrap     | Bootstrap team   | MIT     | Layout and components  |
+| Bootstrap     | Bootstrap team   | MIT     | Layout, search bar and components  |
 | Flask         | Pallets Projects | BSD     | Web server and routing |
 | images        | magnific         | EULA    | Images and placeholder |
+| information   | Fifa             | Copyright – All rights reserved    | test, news and videos  |
 
 
----
 
 > **Student Declaration:** All work submitted is my own except where explicitly acknowledged above.
