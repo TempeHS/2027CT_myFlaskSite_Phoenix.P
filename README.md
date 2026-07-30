@@ -6,7 +6,7 @@
 | **Student Name(s)**            | Phoenix Pham |
 | **Class / Course**             | 9CT1         |
 | **Repository**                 | https://github.com/TempeHS/2027CT_myFlaskSite_Phoenix.P |
-| **Live Site / Codespaces URL** | N/A          |
+| **Live Site / Codespaces URL** | https://bookish-happiness-wr655qpg7w7vfrj.github.dev/        |
 | **Date**                       | 23/07/2026   |
 
 > Your website is the main piece of work. This README is short on purpose — it
@@ -53,8 +53,14 @@ Score Squad connects to our students to help, engage and watch the latest news a
 
 | Page    | Route      | What it delivers |
 | ------- | ---------- | ---------------- |
-| Home    | `/`        |                  |
-| Contact | `/contact` |                  |
+| Home    | `/`        |  Shows the main Score Squad introduction, recent match information, and navigation links to other sections. It acts as the central hub for soccer fans.                |
+| Contact | `/contact` |  Provides basic contact information for the soccer club or site creator. Allows users to reach out but does not include forms or advanced features.                |
+| About us | `/about us` |  Provides basic information about the website.                |
+| World cup | `/World cup` |  Provides basic information about the world cup.                |
+| Watch live | `watch live` | Allows viewers to watch matches.                |
+| Learn skills | `/learn skills` |  Allows viewers to learn new skills.                |
+| News | `/news` |  Allow viewers to see recent news.                |
+
 
 ### 3.3 Evaluation Against Your Intent (2–3 paragraphs)
 
